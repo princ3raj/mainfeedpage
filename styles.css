@@ -492,6 +492,14 @@ margin-top: 20px;
  height: 60px;
 }
 
+.like-comment-share .buttons .fa{
+  
+  color: #00000030;
+  font-size: 32px;
+  
+ }
+
+
 
 
 }
@@ -579,18 +587,42 @@ margin-top: 20px;
 }
 
 
+ .fa{
+  
+  color: #00000030;
+  font-size: 29px;
+  
+ }
+
+ .like-comment-share .buttons .heart i.fa-heart{
+
+  color: #f44336;
+ }
+
  .heart{
+   animation: heart 0.5s linear;
+ }
 
-  background: url("images/heart-shape-outline.png");
-  
-  
-}
+ @keyframes heart{
 
-.like::before{
+  0%{
 
-  background: url("images/liked-button.png");
-  
-}
+    transform: rotate(0deg) scale(1.7);
+  }
+
+  40%{
+
+    transform: rotate(0deg) scale(1);
+  }
+  41%{
+
+    transform: rotate(360deg) scale(1);
+  }
+  100%{
+
+    transform: rotate(0deg) scale(1);
+  }
+ }
 
 
 

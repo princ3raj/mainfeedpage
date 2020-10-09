@@ -10,15 +10,19 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script>
     $(document).ready(function(){
-     $(".like").click(function(){
 
-      $(this).toggleClass("heart")
+      $(".like").click(function(e){
 
-     });
 
+        e.preventDefault()
+
+        $(this).toggleClass("heart");
+
+      });
 
     });
   </script>
+ 
 	<script>
 		$(document).ready(function(){
 
@@ -249,7 +253,7 @@
       <div class="like-comment-share">
 
         <ul class="buttons">
-          <li id="liked-button"><a  href="#"><img class="like" src="images/liked-button.png" alt=""></a></li>  <p id="like-text">1.2k Likes</p>
+         <a href="#" class="like"><i class="fa fa-heart"></i></a><p id="like-text">1.2k Likes</p>
           <li  id="comment-button"><img src="images/comment-button.png" alt=""></li><p id="comment-text">282 Comments</p>
           <li id="share-button"><img src="images/share-button.png" alt=""></li><p id="share-text">10 Shares</p>
         </ul>
@@ -268,7 +272,7 @@
     <!-- 2nd post-->
 
 
-    <div class="post-container">
+   <div class="post-container">
 
 
       <div class="post-inner-container">
@@ -278,7 +282,7 @@
   
   
         <ul class="post-owner">
-          <li id="username">Prince Raj</li>
+          <li id="username">Kitty and ballu</li>
           <li id="created_at">5 mins ago
             <img src="images/earth.png" alt="">
           </li>
@@ -291,7 +295,7 @@
 
       <div id="post-image">
 
-        <img   width="620px" height="400px" src="images/playballu.png" alt="">
+        <img   width="620px" height="400" src="images/playballu.png" alt="">
       </div>
 
    
@@ -299,7 +303,7 @@
       <div class="like-comment-share">
 
         <ul class="buttons">
-          <li id="liked-button"><img src="images/liked-button.png" alt=""></li>  <p id="like-text">1.2k Likes</p>
+         <a href="#" class="like"><i class="fa fa-heart"></i></a><p id="like-text">1.2k Likes</p>
           <li  id="comment-button"><img src="images/comment-button.png" alt=""></li><p id="comment-text">282 Comments</p>
           <li id="share-button"><img src="images/share-button.png" alt=""></li><p id="share-text">10 Shares</p>
         </ul>
@@ -315,7 +319,6 @@
 
 
 
-
      <div class="post-container">
 
 
@@ -326,7 +329,7 @@
   
   
         <ul class="post-owner">
-          <li id="username">Prince Raj</li>
+          <li id="username">Kitty and ballu</li>
           <li id="created_at">5 mins ago
             <img src="images/earth.png" alt="">
           </li>
@@ -339,7 +342,7 @@
 
       <div id="post-image">
 
-        <img   width="620px" height="400px" src="images/ballu.png" alt="">
+        <img   width="620px" height="400" src="images/ballu.png" alt="">
       </div>
 
    
@@ -347,7 +350,7 @@
       <div class="like-comment-share">
 
         <ul class="buttons">
-          <li id="liked-button"><img  src="images/liked-button.png" alt=""></li>  <p id="like-text">1.2k Likes</p>
+         <a href="#" class="like"><i class="fa fa-heart"></i></a><p id="like-text">1.2k Likes</p>
           <li  id="comment-button"><img src="images/comment-button.png" alt=""></li><p id="comment-text">282 Comments</p>
           <li id="share-button"><img src="images/share-button.png" alt=""></li><p id="share-text">10 Shares</p>
         </ul>
@@ -356,18 +359,6 @@
 
 
     </div>
-
-
-
-    
-    
-
-   
-   
-  
-   
-    
-  </div>
 
 
   <!-- main conatiner end here -->
